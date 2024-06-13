@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost;databaseName=IMS;encrypt = false
+    username: SA
+    password: 12345678@Abcxyz@
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: vuduynsl@gmail.com
+    password: shmkydmkkjoxcjpz
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

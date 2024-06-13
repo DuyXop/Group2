@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Detail</title>
+    <link rel="stylesheet" href="assets/css/interviewDetail.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <script>
+        function confirmExit() {
+            var confirmation = confirm("Bạn có muốn thoát không?");
+            if (confirmation) {
+                window.location.href = "login.html";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <div class="logo">
+            <img src="assets/img/logo_dev.jpeg" alt="Anh Dev" />
+            <span>IMS</span>
+        </div>
+        <a href="home.html" class="fa-solid fa-house home"></a>
+        <a href="#" class="remain">
+            <i class="fa-solid fa-users"></i>
+            <div>Candidate</div>
+        </a>
+        <a href="#" class="remain">
+            <i class="fa-solid fa-briefcase"></i>
+            <div>Job</div>
+        </a>
+        <a href="#" class="remain" style="background-color: #ccc">
+            <i class="fa-regular fa-comments"></i>
+            <div>Interview</div>
+        </a>
+        <a href="#" class="remain">
+            <i class="fa-regular fa-file-lines"></i>
+            <div>Offer</div>
+        </a>
+        <a href="#" class="remain">
+            <i class="fa-solid fa-user-tag"></i>
+            <div>User</div>
+        </a>
+    </div>
+    <div class="right">
+        <div class="right_head">
+            <div class="title">Interview Schedule</div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <button onclick="confirmExit()">Log out</button>
+            </div>
+        </div>
+        <a
+                href="userList.html"
+                style="margin: 0 0 10px 35px; text-decoration: underline"
+        >
+            Interview Schedule List
+        </a>
+        <i style="margin: 0 10px" class="fa-solid fa-chevron-right"></i>
+        <a href="userCreate.html" style="text-decoration: underline"
+        >New Interview Schedule</a
+        >
+
+        <div class="job-details">
+            <div class="job-info">
+                <div class="column">
+                    <p><strong>Schedule title:</strong> <span>a</span></p>
+                    <p>
+                        <strong>Candidate name:</strong>
+                        <span>a</span>
+                    </p>
+                    <p>
+                        <strong>Phone number:</strong> From <span>a</span> VND To
+                        <span>a</span> VND
+                    </p>
+                    <p>
+                        <strong>Schedule time:</strong>
+                        <span>a</span>
+                    </p>
+                    <p><strong>Note:</strong> <span>a</span></p>
+                </div>
+                <div class="column">
+                    <p><strong>Job:</strong> <span>a</span></p>
+                    <p>
+                        <strong>Interviewer:</strong>
+                        <span>a</span>
+                    </p>
+                    <p>
+                        <strong>Location:</strong>
+                        <span>a</span>
+                    </p>
+                    <p>
+                        <strong>Recruiter owner:</strong>
+                        <span>a</span>
+                    </p>
+                    <p>
+                        <strong>Meeting ID:</strong>
+                        <span>a</span>
+                    </p>
+                    <p>
+                        <strong>Result:</strong>
+                        <span>a</span>
+                    </p>
+                    <p>
+                        <strong>Status:</strong>
+                        <span>a</span>
+                    </p>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="edit">Edit</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
